@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cronómetro</title>
+
+  <!-- Fuente moderna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="stopwatch-container">
+
+    <!-- DISPLAY -->
+    <section class="display">
+      <div class="time-wrapper">
+        <span id="hours">00</span>
+        <span class="separator">:</span>
+
+        <span id="minutes">00</span>
+        <span class="separator">:</span>
+
+        <span id="seconds">00</span>
+
+        <!-- Milisegundos -->
+        <span id="milliseconds">000</span>
+      </div>
+    </section>
+
+    <!-- BOTONES -->
+    <section class="controls">
+      <button id="startPauseBtn" class="btn btn-green">
+        Start
+      </button>
+
+      <button id="clearBtn" class="btn btn-red">
+        Clear
+      </button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
